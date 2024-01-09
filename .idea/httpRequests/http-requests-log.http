@@ -1,0 +1,49 @@
+POST http://127.0.0.1:80/api/segmentation?bg_color=#00FF00
+Accept: application/json
+Content-Type: multipart/form-data; boundary=boundary
+Content-Length: 31177
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+--boundary
+Content-Disposition: form-data; name="image"; filename="original.png"
+Content-Type: image/png
+
+< C:\Users\patry\IdeaProjects\Python\ZPDS\backend\resources\original.png
+--boundary--
+
+<> 2024-01-10T003706.200.jpeg
+
+###
+
+GET http://127.0.0.1:80/api/health
+Accept: application/json
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2024-01-10T003634.200.json
+
+###
+
+GET http://127.0.0.1:80/api/health
+Accept: application/json
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2024-01-10T003539.404.json
+
+###
+
+GET http://127.0.0.1:80/api
+Accept: application/json
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2024-01-10T002911.200.json
+
+###
+

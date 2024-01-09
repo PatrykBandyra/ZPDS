@@ -1,0 +1,44 @@
+### Health check
+GET {{host}}:{{port}}{{base_url}}/health
+Accept: application/json
+
+### Segmentation with background image
+POST {{host}}:{{port}}{{base_url}}/segmentation
+Accept: application/json
+Content-Type: multipart/form-data; boundary=boundary
+
+--boundary
+Content-Disposition: form-data; name="image"; filename="original.png"
+Content-Type: image/png
+
+< ../resources/original.png
+--boundary
+Content-Disposition: form-data; name="bg_image"; filename="this_is_fine.jpg"
+Content-Type: image/jpeg
+
+< ../resources/this_is_fine.jpg
+--boundary--
+
+### Segmentation without background image but with background color
+POST {{host}}:{{port}}{{base_url}}/segmentation?bg_color=#00FF00
+Accept: application/json
+Content-Type: multipart/form-data; boundary=boundary
+
+--boundary
+Content-Disposition: form-data; name="image"; filename="original.png"
+Content-Type: image/png
+
+< ../resources/original.png
+--boundary--
+
+### Segmentation without background image and color
+POST {{host}}:{{port}}{{base_url}}/segmentation
+Accept: application/json
+Content-Type: multipart/form-data; boundary=boundary
+
+--boundary
+Content-Disposition: form-data; name="image"; filename="original.png"
+Content-Type: image/png
+
+< ../resources/original.png
+--boundary--
