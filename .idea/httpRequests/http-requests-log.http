@@ -1,3 +1,498 @@
+POST http://127.0.0.1:80/api/predict/image?predictor_name=caffe
+Accept: application/json
+Content-Type: multipart/form-data; boundary=boundary
+Content-Length: 251292
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+--boundary
+Content-Disposition: form-data; name="image"; filename="img.png"
+Content-Type: image/png
+
+< C:\Users\patry\IdeaProjects\Python\ZPDS\backend\resources\image.jpg
+--boundary--
+
+<> 2024-01-12T015754.200.json
+
+###
+
+POST http://127.0.0.1:80/api/predict/image?predictor_name=deep_face
+Accept: application/json
+Content-Type: multipart/form-data; boundary=boundary
+Content-Length: 251292
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+--boundary
+Content-Disposition: form-data; name="image"; filename="img.png"
+Content-Type: image/png
+
+< C:\Users\patry\IdeaProjects\Python\ZPDS\backend\resources\image.jpg
+--boundary--
+
+<> 2024-01-12T015752.200.json
+
+###
+
+GET http://127.0.0.1:80/api/health
+Accept: application/json
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2024-01-12T012428.200.json
+
+###
+
+POST http://127.0.0.1:80/api/predict/image?predictor_name=caffe
+Accept: application/json
+Content-Type: multipart/form-data; boundary=boundary
+Content-Length: 251292
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+--boundary
+Content-Disposition: form-data; name="image"; filename="img.png"
+Content-Type: image/png
+
+< C:\Users\patry\IdeaProjects\Python\ZPDS\backend\resources\image.jpg
+--boundary--
+
+<> 2024-01-12T012057.200.json
+
+###
+
+POST http://127.0.0.1:80/api/predict/image?predictor_name=caffe
+Accept: application/json
+Content-Type: multipart/form-data; boundary=boundary
+Content-Length: 251292
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+--boundary
+Content-Disposition: form-data; name="image"; filename="img.png"
+Content-Type: image/png
+
+< C:\Users\patry\IdeaProjects\Python\ZPDS\backend\resources\image.jpg
+--boundary--
+
+<> 2024-01-12T012055.200.json
+
+###
+
+POST http://127.0.0.1:80/api/predict/image?predictor_name=deep_face
+Accept: application/json
+Content-Type: multipart/form-data; boundary=boundary
+Content-Length: 251292
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+--boundary
+Content-Disposition: form-data; name="image"; filename="img.png"
+Content-Type: image/png
+
+< C:\Users\patry\IdeaProjects\Python\ZPDS\backend\resources\image.jpg
+--boundary--
+
+<> 2024-01-12T012053.200.json
+
+###
+
+POST http://127.0.0.1:80/api/predict/image?predictor_name=deep_face
+Accept: application/json
+Content-Type: multipart/form-data; boundary=boundary
+Content-Length: 251292
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+--boundary
+Content-Disposition: form-data; name="image"; filename="img.png"
+Content-Type: image/png
+
+< C:\Users\patry\IdeaProjects\Python\ZPDS\backend\resources\image.jpg
+--boundary--
+
+<> 2024-01-12T012050.200.json
+
+###
+
+POST http://127.0.0.1:80/api/predict/image?predictor_name=caffe
+Accept: application/json
+Content-Type: multipart/form-data; boundary=boundary
+Content-Length: 251292
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+--boundary
+Content-Disposition: form-data; name="image"; filename="img.png"
+Content-Type: image/png
+
+< C:\Users\patry\IdeaProjects\Python\ZPDS\backend\resources\image.jpg
+--boundary--
+
+<> 2024-01-12T011330.200.json
+
+###
+
+POST http://127.0.0.1:80/api/predict/image?predictor_name=caffe
+Accept: application/json
+Content-Type: multipart/form-data; boundary=boundary
+Content-Length: 251292
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+--boundary
+Content-Disposition: form-data; name="image"; filename="img.png"
+Content-Type: image/png
+
+< C:\Users\patry\IdeaProjects\Python\ZPDS\backend\resources\image.jpg
+--boundary--
+
+<> 2024-01-12T011327.200.json
+
+###
+
+POST http://127.0.0.1:80/api/predict/image?predictor_name=deep_face
+Accept: application/json
+Content-Type: multipart/form-data; boundary=boundary
+Content-Length: 251292
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+--boundary
+Content-Disposition: form-data; name="image"; filename="img.png"
+Content-Type: image/png
+
+< C:\Users\patry\IdeaProjects\Python\ZPDS\backend\resources\image.jpg
+--boundary--
+
+<> 2024-01-12T010945.200.json
+
+###
+
+POST http://127.0.0.1:80/api/predict/image?predictor_name=caffe
+Accept: application/json
+Content-Type: multipart/form-data; boundary=boundary
+Content-Length: 251292
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+--boundary
+Content-Disposition: form-data; name="image"; filename="img.png"
+Content-Type: image/png
+
+< C:\Users\patry\IdeaProjects\Python\ZPDS\backend\resources\image.jpg
+--boundary--
+
+<> 2024-01-12T010749.500.txt
+
+###
+
+POST http://127.0.0.1:80/api/predict/image?predictor_name=deep_face
+Accept: application/json
+Content-Type: multipart/form-data; boundary=boundary
+Content-Length: 251292
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+--boundary
+Content-Disposition: form-data; name="image"; filename="img.png"
+Content-Type: image/png
+
+< C:\Users\patry\IdeaProjects\Python\ZPDS\backend\resources\image.jpg
+--boundary--
+
+<> 2024-01-12T010740.200.json
+
+###
+
+POST http://127.0.0.1:80/api/predict/image?predictor_name=caffe
+Accept: application/json
+Content-Type: multipart/form-data; boundary=boundary
+Content-Length: 31177
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+--boundary
+Content-Disposition: form-data; name="image"; filename="original.png"
+Content-Type: image/png
+
+< C:\Users\patry\IdeaProjects\Python\ZPDS\backend\resources\original.png
+--boundary--
+
+<> 2024-01-12T000957.500.txt
+
+###
+
+POST http://127.0.0.1:80/api/predict/image?predictor_name=caffe
+Accept: application/json
+Content-Type: multipart/form-data; boundary=boundary
+Content-Length: 31177
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+--boundary
+Content-Disposition: form-data; name="image"; filename="original.png"
+Content-Type: image/png
+
+< C:\Users\patry\IdeaProjects\Python\ZPDS\backend\resources\original.png
+--boundary--
+
+<> 2024-01-12T000851.500.txt
+
+###
+
+POST http://127.0.0.1:80/api/predict/image?predictor_name=caffe
+Accept: application/json
+Content-Type: multipart/form-data; boundary=boundary
+Content-Length: 31177
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+--boundary
+Content-Disposition: form-data; name="image"; filename="original.png"
+Content-Type: image/png
+
+< C:\Users\patry\IdeaProjects\Python\ZPDS\backend\resources\original.png
+--boundary--
+
+<> 2024-01-12T000759.500.txt
+
+###
+
+POST http://127.0.0.1:80/api/predict/image?predictor_name=caffe
+Accept: application/json
+Content-Type: multipart/form-data; boundary=boundary
+Content-Length: 79871
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+--boundary
+Content-Disposition: form-data; name="image"; filename="original.png"
+Content-Type: image/png
+
+< C:\Users\patry\IdeaProjects\Python\ZPDS\backend\resources\img_3.png
+--boundary--
+
+<> 2024-01-12T000744.500.txt
+
+###
+
+POST http://127.0.0.1:80/api/predict/image?predictor_name=deep_face
+Accept: application/json
+Content-Type: multipart/form-data; boundary=boundary
+Content-Length: 79871
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+--boundary
+Content-Disposition: form-data; name="image"; filename="original.png"
+Content-Type: image/png
+
+< C:\Users\patry\IdeaProjects\Python\ZPDS\backend\resources\img_3.png
+--boundary--
+
+<> 2024-01-11T205820.200.json
+
+###
+
+POST http://127.0.0.1:80/api/predict/image?predictor_name=deep_face
+Accept: application/json
+Content-Type: multipart/form-data; boundary=boundary
+Content-Length: 31177
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+--boundary
+Content-Disposition: form-data; name="image"; filename="original.png"
+Content-Type: image/png
+
+< C:\Users\patry\IdeaProjects\Python\ZPDS\backend\resources\original.png
+--boundary--
+
+<> 2024-01-11T205205.200.json
+
+###
+
+POST http://127.0.0.1:80/api/predict/image?predictor_name=deep_face
+Accept: application/json
+Content-Type: multipart/form-data; boundary=boundary
+Content-Length: 31177
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+--boundary
+Content-Disposition: form-data; name="image"; filename="original.png"
+Content-Type: image/png
+
+< C:\Users\patry\IdeaProjects\Python\ZPDS\backend\resources\original.png
+--boundary--
+
+<> 2024-01-11T205200.200.json
+
+###
+
+POST http://127.0.0.1:80/api/predict/image?predictor_name=deep_face
+Accept: application/json
+Content-Type: multipart/form-data; boundary=boundary
+Content-Length: 293078
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+--boundary
+Content-Disposition: form-data; name="image"; filename="original.png"
+Content-Type: image/png
+
+< C:\Users\patry\IdeaProjects\Python\ZPDS\backend\resources\img.png
+--boundary--
+
+<> 2024-01-11T205129.200.json
+
+###
+
+POST http://127.0.0.1:80/api/predict/image?predictor_name=deep_face
+Accept: application/json
+Content-Type: multipart/form-data; boundary=boundary
+Content-Length: 156
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+--boundary
+Content-Disposition: form-data; name="image"; filename="img.png"
+Content-Type: image/png
+
+< C:\Users\patry\AppData\Local\Temp\http_request_input_file1.txt
+--boundary--
+
+<> 2024-01-11T203943.200.json
+
+###
+
+POST http://127.0.0.1:80/api/predict/image?predictor_name=deep_face
+Accept: application/json
+Content-Type: multipart/form-data; boundary=boundary
+Content-Length: 156
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+--boundary
+Content-Disposition: form-data; name="image"; filename="img.png"
+Content-Type: image/png
+
+< C:\Users\patry\AppData\Local\Temp\http_request_input_file.txt
+--boundary--
+
+<> 2024-01-11T203940.200.json
+
+###
+
+POST http://127.0.0.1:80/api/predict/image?predictor_name=deep_face
+Accept: application/json
+Content-Type: multipart/form-data; boundary=boundary
+Content-Length: 293078
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+--boundary
+Content-Disposition: form-data; name="image"; filename="original.png"
+Content-Type: image/png
+
+< C:\Users\patry\IdeaProjects\Python\ZPDS\backend\resources\img.png
+--boundary--
+
+<> 2024-01-11T203912.200.json
+
+###
+
+POST http://127.0.0.1:80/api/predict/image?predictor_name=deep_face
+Accept: application/json
+Content-Type: multipart/form-data; boundary=boundary
+Content-Length: 374127
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+--boundary
+Content-Disposition: form-data; name="image"; filename="original.png"
+Content-Type: image/png
+
+< C:\Users\patry\IdeaProjects\Python\ZPDS\backend\resources\img_2.png
+--boundary--
+
+<> 2024-01-11T203840.200.json
+
+###
+
+POST http://127.0.0.1:80/api/predict/image?predictor_name=deep_face
+Accept: application/json
+Content-Type: multipart/form-data; boundary=boundary
+Content-Length: 31177
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+--boundary
+Content-Disposition: form-data; name="image"; filename="original.png"
+Content-Type: image/png
+
+< C:\Users\patry\IdeaProjects\Python\ZPDS\backend\resources\original.png
+--boundary--
+
+<> 2024-01-11T203805.200.json
+
+###
+
+POST http://127.0.0.1:80/api/predict/image?predictor_name=deep_face
+Accept: application/json
+Content-Type: multipart/form-data; boundary=boundary
+Content-Length: 31177
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+--boundary
+Content-Disposition: form-data; name="image"; filename="original.png"
+Content-Type: image/png
+
+< C:\Users\patry\IdeaProjects\Python\ZPDS\backend\resources\original.png
+--boundary--
+
+<> 2024-01-11T203256.500.txt
+
+###
+
+GET http://127.0.0.1:80/api/health
+Accept: application/json
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2024-01-11T203135.200.json
+
+###
+
 POST http://127.0.0.1:80/api/segmentation?bg_color=#00FF00
 Accept: application/json
 Content-Type: multipart/form-data; boundary=boundary

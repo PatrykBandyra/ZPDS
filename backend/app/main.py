@@ -1,14 +1,14 @@
 import logging
-from io import BytesIO
-from typing import Union
+from typing import Dict
 
+import cv2
 import numpy as np
 import uvicorn
-from PIL import Image
 from fastapi import FastAPI, UploadFile, File, HTTPException
-from fastapi.responses import StreamingResponse
+from numpy.typing import NDArray
 
-from segmentation import perform_selfie_segmentation_with_bg_swap, perform_selfie_segmentation_white_bg
+from age_prediction_response import AgePredictionResponse
+from age_predictor import AgePredictor, DeepFaceAgePredictor, CaffeAgePredictor
 
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.INFO)
@@ -20,35 +20,37 @@ logger.addHandler(file_handler)
 app = FastAPI()
 ROOT_URL = '/api'
 
-
-def create_response_image(img: np.ndarray) -> StreamingResponse:
-    pillow_img = Image.fromarray(img)
-    response_img = BytesIO()
-    pillow_img.save(response_img, 'JPEG')
-    response_img.seek(0)
-
-    return StreamingResponse(response_img, media_type='image/jpeg')
+predictors: Dict[str, AgePredictor] = {
+    'deep_face': DeepFaceAgePredictor(),
+    'caffe': CaffeAgePredictor()
+}
+default_predictor_name = 'deep_face'
 
 
-@app.post(f'{ROOT_URL}/segmentation')
-async def image_segmentation(image: UploadFile = File(...),
-                             bg_image: Union[UploadFile, None] = None,
-                             bg_color: str = None) -> StreamingResponse:
-    logger.info('/segmentation endpoint called')
+@app.post(f'{ROOT_URL}/predict/image')
+async def predict_age_from_image(image: UploadFile = File(...), predictor_name: str = None) -> AgePredictionResponse:
+    logger.info('Predicting age for image ...')
     if image.content_type not in ['image/jpeg', 'image/png']:
         raise HTTPException(400, detail='Invalid file type')
-    if bg_image is not None:
-        result_img = perform_selfie_segmentation_with_bg_swap(image.file, bg_image.file)
-    else:
-        result_img = perform_selfie_segmentation_white_bg(image.file, bg_color)
-    return create_response_image(result_img)
+    try:
+        image_content: bytes = await image.read()
+        image_array: NDArray = np.frombuffer(image_content, np.uint8)
+        img: NDArray = cv2.imdecode(image_array, cv2.IMREAD_COLOR)
+        return get_predictor(predictor_name).predict_age(img)
+    except Exception as e:
+        logger.error(str(e))
+        raise HTTPException(status_code=500, detail='Error occurred while processing the image')
+
+
+def get_predictor(predictor_name: str) -> AgePredictor:
+    return predictors.get(predictor_name, default_predictor_name)
 
 
 @app.get(f'{ROOT_URL}/health')
 async def health_check() -> str:
-    logger.info('/health endpoint called')
-    return '[SGM]: Health check works'
+    logger.info('Health check called')
+    return 'Health check works'
 
 
 if __name__ == "__main__":
-    uvicorn.run(app, host="0.0.0.0", port=8002)
+    uvicorn.run(app, host="0.0.0.0", port=80)

@@ -1,0 +1,27 @@
+### Health check
+GET {{host}}:{{port}}{{base_url}}/health
+Accept: application/json
+
+### Predicting age - deep_face
+POST {{host}}:{{port}}{{base_url}}/predict/image?predictor_name=deep_face
+Accept: application/json
+Content-Type: multipart/form-data; boundary=boundary
+
+--boundary
+Content-Disposition: form-data; name="image"; filename="img.png"
+Content-Type: image/png
+
+< ../resources/image.jpg
+--boundary--
+
+### Predicting age - caffe
+POST {{host}}:{{port}}{{base_url}}/predict/image?predictor_name=caffe
+Accept: application/json
+Content-Type: multipart/form-data; boundary=boundary
+
+--boundary
+Content-Disposition: form-data; name="image"; filename="img.png"
+Content-Type: image/png
+
+< ../resources/image.jpg
+--boundary--
