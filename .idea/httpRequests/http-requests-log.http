@@ -3,6 +3,64 @@ Accept: application/json
 Content-Type: multipart/form-data; boundary=boundary
 Content-Length: 251292
 Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+--boundary
+Content-Disposition: form-data; name="image"; filename="img.png"
+Content-Type: image/png
+
+< C:\Users\patry\IdeaProjects\Python\ZPDS\backend\resources\image.jpg
+--boundary--
+
+<> 2024-01-16T220435.200.json
+
+###
+
+POST http://127.0.0.1:80/api/predict/image?predictor_name=deep_face
+Accept: application/json
+Content-Type: multipart/form-data; boundary=boundary
+Content-Length: 251292
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+--boundary
+Content-Disposition: form-data; name="image"; filename="img.png"
+Content-Type: image/png
+
+< C:\Users\patry\IdeaProjects\Python\ZPDS\backend\resources\image.jpg
+--boundary--
+
+<> 2024-01-16T220433.200.json
+
+###
+
+GET http://127.0.0.1:80/api/health
+Accept: application/json
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2024-01-16T220424.200.json
+
+###
+
+GET http://127.0.0.1:80/api/health
+Accept: application/json
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2024-01-16T220419.200.json
+
+###
+
+POST http://127.0.0.1:80/api/predict/image?predictor_name=caffe
+Accept: application/json
+Content-Type: multipart/form-data; boundary=boundary
+Content-Length: 251292
+Connection: Keep-Alive
 User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
 Accept-Encoding: br,deflate,gzip,x-gzip
 

@@ -35,8 +35,8 @@ class DeepFaceAgePredictor(AgePredictor):
 class CaffeAgePredictor(AgePredictor):
 
     def __init__(self):
-        self.detector = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
-        self.age_model = cv2.dnn.readNetFromCaffe('age.prototxt', 'dex_chalearn_iccv2015.caffemodel')
+        self.detector = cv2.CascadeClassifier('app/haarcascade_frontalface_default.xml')
+        self.age_model = cv2.dnn.readNetFromCaffe('app/age.prototxt', 'app/dex_chalearn_iccv2015.caffemodel')
         self.age_indexes = np.array([i for i in range(0, 101)])
 
     def predict_age(self, image: NDArray) -> AgePredictionResponse:
